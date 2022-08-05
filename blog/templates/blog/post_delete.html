@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %} Deletar - Nova Postagem {% endblock title %}
+{% block content %}
+<h1>Deletar Postagem</h1>
+<form action="" method="post">{% csrf_token %}
+    <p>Você tem certeza que quer deletar esse registro? "{{post.title}}" ?</p>
+    <input type="submit" class="btn btn-danger" value="Confirmar">
+</form>
+{% endblock content %}
